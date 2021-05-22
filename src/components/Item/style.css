@@ -1,0 +1,10 @@
+.item-container {
+  color: purple;
+  font-weight: bold;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid purple;
+}

@@ -1,0 +1,10 @@
+input {
+  padding: 15px;
+  width: 800px;
+  border-radius: 5px;
+  border: 1px solid purple;
+  margin: 5px;
+  color: purple;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
