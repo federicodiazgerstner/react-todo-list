@@ -3,7 +3,7 @@ import './App.css';
 import Search from './components/Search';
 import Button from './components/Button';
 import List from './components/List';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
   const [inputValue, setInputValue] = useState('');
