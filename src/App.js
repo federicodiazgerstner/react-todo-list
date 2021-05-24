@@ -9,6 +9,18 @@ function App() {
   const [inputValue, setInputValue] = useState('');
   const [tasks, setTasks] = useState([]);
 
+  useEffect(() => {
+    let data = localStorage.getItem('tasks');
+    if (data !== null) {
+      setTasks(JSON.parse(data));
+    } else {
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }, [tasks]);
+
   function handleChange(value) {
     setInputValue(value);
   }
